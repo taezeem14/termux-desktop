@@ -1,0 +1,3 @@
+/* sample tiny gtk css to make things darker */
+window { background-color: #121212; color: #e6e6e6; }
+button { background-image: none; background-color: #1e1e1e; color: #fff; border-radius:4px; }
