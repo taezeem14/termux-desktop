@@ -65,12 +65,7 @@ apt update && apt install -y git wget
 ---
 
 
-## 📜 License
-
-MIT License © 2025 <Muhammad Taezeem Tariq Matta>
-
----
-
 ### 🌟 Pro Tip
 
 Don’t just install a desktop. **Flex with it.** Push your rices, show your workflow, and make your phone feel like a cyberpunk terminal. 🕶️
+
