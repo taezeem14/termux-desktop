@@ -1,4 +1,4 @@
-# 🌌 Termux Desktop (Inspired From Adi1090x / Aditya Shakya)
+# 🌌 Termux Desktop (Inspired From ![Adi1090x](https://github.com/adi1090x) / Aditya Shakya)
 
 ![Stars](https://img.shields.io/github/stars/taezeem14/termux-desktop?style=for-the-badge\&logo=github\&color=blue)
 ![Forks](https://img.shields.io/github/forks/taezeem14/termux-desktop?style=for-the-badge\&logo=github\&color=purple)
@@ -176,3 +176,4 @@ Don’t just install a desktop. **Flex with it.** Push your rices, show your wor
 ```bash
 pkg install x11-repo -y
 ```
+
