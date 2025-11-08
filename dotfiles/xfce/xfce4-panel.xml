@@ -1,4 +1,10 @@
 <?xml version="1.0"?>
 <channel name="xfce4-panel" version="1.0">
-  <!-- default panel, xfce will recreate if needed -->
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+  </property>
+  <property name="panels/panel-1" type="empty">
+    <property name="size" type="int" value="28"/>
+    <property name="position" type="string" value="p=6;x=0;y=0"/>
+  </property>
 </channel>
