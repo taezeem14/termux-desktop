@@ -1,3 +1,10 @@
-/* sample tiny gtk css to make things darker */
+/* Simple dark GTK theme */
 window { background-color: #121212; color: #e6e6e6; }
-button { background-image: none; background-color: #1e1e1e; color: #fff; border-radius:4px; }
+button {
+  background-image: none;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #2e2e2e;
+}
+entry, combobox, textview { background: #1a1a1a; color: #f1f1f1; }
