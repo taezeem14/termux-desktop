@@ -3,12 +3,22 @@
 THEME="${1:-sample-theme}"
 REPO_ROOT="${PWD}"
 THEME_DIR="${REPO_ROOT}/themes/${THEME}"
+
 if [ ! -d "$THEME_DIR" ]; then
   echo "Theme not found: $THEME"
   exit 1
 fi
+
 mkdir -p "${HOME}/.local/share/themes/${THEME}"
 cp -r "$THEME_DIR"/* "${HOME}/.local/share/themes/${THEME}/"
-# set gtk theme for xfce
-xfconf-query -c xsettings -p /Net/ThemeName -s "$THEME" 2>/dev/null || true
-echo "Theme ${THEME} installed and applied (if desktop supports it)."
+
+# Apply GTK + Icon + Wallpaper (if XFCE)
+if command -v xfconf-query >/dev/null 2>&1; then
+  xfconf-query -c xsettings -p /Net/ThemeName -s "$THEME" || true
+  xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark" || true
+  if [ -f "${HOME}/.local/share/themes/${THEME}/wallpaper.jpg" ]; then
+    xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s "${HOME}/.local/share/themes/${THEME}/wallpaper.jpg"
+  fi
+fi
+
+echo "Theme ${THEME} installed and applied!"
