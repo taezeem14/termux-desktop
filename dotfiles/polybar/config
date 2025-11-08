@@ -3,9 +3,11 @@ width = 100%
 height = 24
 background = #101010
 foreground = #EEEEEE
+font-0 = "DejaVu Sans Mono:size=10"
 modules-left = date
 modules-right =
-module/date
+
+[module/date]
 type = internal/date
 interval = 5
-format = %Y-%m-%d %H:%M
+format = "📅 %Y-%m-%d 🕒 %H:%M"
