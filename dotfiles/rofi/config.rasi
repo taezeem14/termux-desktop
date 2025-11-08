@@ -14,3 +14,7 @@ element {
   padding: 8px 10px;
   border-bottom: 1px solid #222;
 }
+element selected {
+  background: #00ffe1;
+  color: #000;
+}
